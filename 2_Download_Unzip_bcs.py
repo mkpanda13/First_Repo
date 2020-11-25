@@ -1,4 +1,5 @@
 #!/usr/local/bin/python3
+#Added by Pandama 
 
 import pysftp
 from zipfile import ZipFile 
@@ -22,3 +23,4 @@ with pysftp.Connection('10.88.15.177', username='ETL_MOH_Srv1', private_key='/ho
         for n in myzip.namelist():
           print (n)
         myzip.extractall()
+        
